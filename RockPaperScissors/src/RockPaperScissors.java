@@ -17,6 +17,7 @@ public class RockPaperScissors {
         System.out.println("Welcome to Rock, Paper, Scissors!");
 
         boolean playAgain = true;
+
         do{
             int rounds = getNumberOfRounds();
             if(rounds == -1){
@@ -27,6 +28,7 @@ public class RockPaperScissors {
 
             System.out.print("\n Do you want to play again? (Yes/No): ");
             String answer = scanner.next();
+
             if(!answer.equalsIgnoreCase("yes")){
                 playAgain = false;
                 System.out.println("Thanks for Playing!");
@@ -68,6 +70,7 @@ public class RockPaperScissors {
             System.out.println("\n --- Round " + i + " ---");
 
             int userChoice = getUserChoice();
+
             if(userChoice == -1){
                 computerWins ++;
                 continue;
